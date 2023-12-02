@@ -22,9 +22,11 @@ Researchers have proposed to use data of human preference feedback to fine-tune 
 The primary dependencies include NumPy, pandas, SciPy, Matplotlib, seaborn, OpenCV, MediaPipe, PyTorch, Torchvision, Trasnformers, [CLIP](https://github.com/openai/CLIP), [BLIP](https://github.com/salesforce/BLIP),  [ImageReward](https://github.com/THUDM/ImageReward), and [HPS v2](https://github.com/tgxs002/HPSv2).
 
 ## Datasets
+### AU Datasets
 The datasets for training the AU models [DISFA](http://mohammadmahoor.com/disfa/) and [DISFA+](http://mohammadmahoor.com/disfa/) are supposed to be stored at "../FER_datasets/DISFA" and "../FER_datasets/DISFAPlus" respectively (paths specificed in config.py).
 
-FERGI dataset is available for research purposes. Please request it by filling out this [form](https://forms.gle/ja1DUNumBnGSkMMC8). The dataset is supposed to be stored in the "data" folder. Although the raw dataset is not provided in the github repository, the processed facial features of the videos in the dataset has already been provided in the "data" folder.
+### FERGI Dataset
+<strong><ins>FERGI dataset is available for research purposes. Please request it by filling out this [form](https://forms.gle/ja1DUNumBnGSkMMC8).</ins></strong> The dataset is supposed to be stored in the "data" folder. Although the raw dataset is not provided in the github repository, the processed facial features of the videos in the dataset has already been provided in the "data" folder.
 
 ## Pretrained Models
 Multiple pretrained models are used in our model training and analysis. They need to be downloaded from the following links and stored in the "pretrained_models" folder.
