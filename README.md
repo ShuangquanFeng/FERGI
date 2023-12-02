@@ -20,8 +20,16 @@ The primary dependencies include NumPy, pandas, SciPy, Matplotlib, seaborn, Open
 The datasets for training the AU models [DISFA](http://mohammadmahoor.com/disfa/) and [DISFA+](http://mohammadmahoor.com/disfa/) are supposed to be stored at "../FER_datasets/DISFA" and "../FER_datasets/DISFAPlus" respectively (paths specificed in config.py).
 
 FERGI dataset is available for research purposes. Please request it by filling out this [form](https://forms.gle/ja1DUNumBnGSkMMC8). The dataset is supposed to be stored in the "data" folder.
+## Pretrained Models
+Multiple pretrained models are used in our model training and analysis. They need to be downloaded from the following links and stored in the "pretrained_models" folder.
+
+The face recognition model used as the pretrained model for training the AU recognition model can be downloaded [here](https://onedrive.live.com/?authkey=%21AFZjr283nwZHqbA&cid=4A83B6B633B029CC&id=4A83B6B633B029CC%215650&parId=4A83B6B633B029CC%215581&o=OneUp). The download link is provided in the [github repository of InsightFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch#model-zoo). It is supposed to be renamed as "glint360k_cosface_r50_fp16_0.1.pth" and stored in the "pretrained_models" folder after being downloaded.
+
+The face detection model can be downloaded [here](https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/latest/blaze_face_short_range.tflite). The download link is provided in the [official document of MediaPipe](https://developers.google.com/mediapipe/solutions/vision/face_detector).
+
+The facial landmark detection model can be downloaded [here](https://drive.google.com/file/d/1T8J73UTcB25BEJ_ObAJczCkyGKW5VaeY/view). The download link is provided in the [github repository of pytorch_face_landmark](https://github.com/cunjian/pytorch_face_landmark).
 ## AU Datasets Preprocessing
 Run preprocess_DISFA.py and preprocess_DISFAPlus.py for preprocessing the AU datasets.
 
 ## AU Model Training
-Run DISFAwithPlus_train_model.py for training AU models. The trained AU models will be saved in the folder "AU_models". 
+Run DISFAwithPlus_train_model.py for training AU models. The trained AU models will be saved in the folder "AU_models". The trained model used for following analysis can also be downloaded [here](https://drive.google.com/file/d/14Y5h-l6FurSdYBhhH4MaJo7VXsbIEhyC/view?usp=drive_link). <strong>Note that this model is trained on DISFA and DISFA+ and thus should be used for research purposes only.</strong>
