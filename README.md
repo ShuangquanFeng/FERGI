@@ -19,4 +19,9 @@ The primary dependencies include NumPy, pandas, SciPy, Matplotlib, seaborn, Open
 ## Datasets
 The datasets for training the AU models [DISFA](http://mohammadmahoor.com/disfa/) and [DISFA+](http://mohammadmahoor.com/disfa/) are supposed to be stored at "../FER_datasets/DISFA" and "../FER_datasets/DISFAPlus" respectively (paths specificed in config.py).
 
-FERGI dataset is available for research purposes. Please request it by filling out this form. The dataset is supposed to be stored in the "data" folder.
+FERGI dataset is available for research purposes. Please request it by filling out this [form](https://forms.gle/ja1DUNumBnGSkMMC8). The dataset is supposed to be stored in the "data" folder.
+## AU Datasets Preprocessing
+Run preprocess_DISFA.py and preprocess_DISFAPlus.py for preprocessing the AU datasets.
+
+## AU Model Training
+Run DISFAwithPlus_train_model.py for training AU models. The trained AU models will be saved in the folder "AU_models". 
