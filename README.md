@@ -40,7 +40,7 @@ The facial landmark detection model can be downloaded [here](https://drive.googl
 Run preprocess_DISFA.py and preprocess_DISFAPlus.py for preprocessing the AU datasets.
 
 ## AU Model Training
-Run DISFAwithPlus_train_model.py for the training AU recognition model. The trained AU models will be saved in the folder "AU_models". The AU model used for following analysis can also be downloaded [here](https://drive.google.com/file/d/14Y5h-l6FurSdYBhhH4MaJo7VXsbIEhyC/view?usp=drive_link). <strong>Note that this model is trained on DISFA and DISFA+ and thus should be used for research purposes only.</strong>
+Run DISFAwithPlus_train_model.py for the training AU recognition model. The trained AU models will be saved in the folder "AU_models". The AU model used for following analysis can also be downloaded [here](https://drive.google.com/file/d/14Y5h-l6FurSdYBhhH4MaJo7VXsbIEhyC/view?usp=drive_link). <strong>Note that this model is trained on DISFA and DISFA+ and thus should be used for research purposes only. If you use this model in your paper, you should also cite the papers of DISFA and DISFA+ (see the terms of use for [DISFA](http://mohammadmahoor.com/disfa-contact-form/) and [DISFA+](http://mohammadmahoor.com/disfa-plus-request-form/)) in addition to our paper.</strong>
 
 ## Facial Feature Processing
 Run clips_facial_process.py for processing the facial features of the videos in the FERGI dataset. The results from our model has already been provided in the "data" folder.
@@ -56,3 +56,14 @@ Run image_preference_binary_classification_based_on_ranking.py for binary classi
 
 ## Result Analysis
 Run result_analysis.ipynb for analyzing and visualizing the results (Sections 5.1, 5.2, and 5.3 in the paper). The visualizations are saved in the "figures" folder.
+
+## Citation
+
+```
+@article{feng2023fergi,
+  title={FERGI: Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction},
+  author={Feng, Shuangquan and Ma, Junhua and de Sa, Virginia R},
+  journal={arXiv preprint arXiv:2312.03187},
+  year={2023}
+}
+```
