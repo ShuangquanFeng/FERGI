@@ -27,7 +27,7 @@
 
 <br><br>
 
-Researchers have proposed to use data of human preference feedback to fine-tune text-to-image generative models. However, the scalability of human feedback collection has been limited by its reliance on manual annotation. Therefore, we develop and test a method to automatically annotate user preferences from their spontaneous facial expression reaction to the generated images. We collect a dataset of Facial Expression Reaction to Generated Images (FERGI) and show that the activations of multiple facial action units (AUs) are highly correlated with user evaluations of the generated images. Specifically, AU4 (brow lowerer) is reflective of negative evaluations of the generated image whereas AU12 (lip corner puller) is reflective of positive evaluations. These can be useful in two ways. Firstly, we can automatically annotate user preferences between image pairs with substantial difference in these AU responses  with an accuracy significantly outperforming state-of-the-art scoring models. Secondly, directly integrating the AU responses with the scoring models improves their consistency with human preferences. Finally, this method of automatic annotation with facial expression analysis can be potentially generalized to other generation tasks.
+Researchers have proposed to use data of human preference feedback to fine-tune text-to-image generative models. However, the scalability of human feedback collection has been limited by its reliance on manual annotation. Therefore, we develop and test a method to automatically score user preferences from their spontaneous facial expression reaction to the generated images. We collect a dataset of Facial Expression Reaction to Generated Images (FERGI) and show that the activations of multiple facial action units (AUs) are highly correlated with user evaluations of the generated images. We develop an FAU-Net (Facial Action Units Neural Network), which receives inputs from an AU estimation model, to automatically score user preferences for text-to-image generation based on their facial expression reactions, which is complementary to the pre-trained scoring models based on the input text prompts and generated images. Integrating our FAU-Net valence score with the pre-trained scoring models improves their consistency with human preferences. This method of automatic annotation with facial expression analysis can be potentially generalized to other generation tasks.
 
 # Getting Started
 ## Dependencies
@@ -60,11 +60,8 @@ Run clips_facial_process.py for processing the facial features of the videos in 
 ## FERGI Dataset Preprocessing
 Run preprocess_image_data.py, preprocess_baseline_data.py, and preprocess_reaction_data.py for preprocessing the data of generated images, the data of baseline videos, and the data of reaction videos in the FERGI dataset respectively. The results are saved in the "preparation" folder.
 
-## Participant Exclusion
-Run filter_participants_based_on_AU4.py for excluding participants with unreliable, unstable AU4 estimation in following classification (Section 6.2 in the paper). The result is saved in the "preparation" folder.
-
 ## Image Preference Classification
-Run image_preference_binary_classification_based_on_ranking.py for binary classification of image preferences (Section 6.2 in the paper). The results are saved in the "results" folder.
+Run image_preference_binary_classification_based_on_ranking_NN.py for binary classification of image preferences (Section 6.2 in the paper). The results are saved in the "results" folder.
 
 ## Result Analysis
 Run result_analysis.ipynb for analyzing and visualizing the results (Sections 6.1 and 6.2 in the paper). The visualizations are saved in the "figures" folder.
