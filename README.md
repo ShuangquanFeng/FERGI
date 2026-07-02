@@ -69,10 +69,12 @@ Run result_analysis.ipynb for analyzing and visualizing the results (Sections 6.
 ## Citation
 
 ```
-@article{feng2023fergi,
-  title={FERGI: Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction},
+@inproceedings{feng2025fergi,
+  title={FERGI: Automatic Scoring of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction},
   author={Feng, Shuangquan and Ma, Junhua and de Sa, Virginia R},
-  journal={arXiv preprint arXiv:2312.03187},
-  year={2023}
+  booktitle={2025 IEEE 19th International Conference on Automatic Face and Gesture Recognition (FG)},
+  pages={1--11},
+  year={2025},
+  organization={IEEE}
 }
 ```
